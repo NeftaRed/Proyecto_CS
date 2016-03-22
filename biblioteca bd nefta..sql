@@ -48,7 +48,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Usuario` (
-  `id_usuario` INT NOT NULL,
+  `id_usuario` INT NOT NULL AUTO_INCREMENT,
   `huella` BLOB NOT NULL,
   `imagen_perfil` BLOB NULL,
   `Prim_nombre` VARCHAR(50) NOT NULL,
