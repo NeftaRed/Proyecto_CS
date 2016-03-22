@@ -54,14 +54,13 @@ CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Usuario` (
   `Prim_nombre` VARCHAR(50) NOT NULL,
   `url_direccion` VARCHAR(200) NULL,
   `Seg_nombre` VARCHAR(50) NOT NULL,
-  `apellido_pat` INT NOT NULL,
+  `apellido_pat` VARCHAR(50) NOT NULL,
   `apellido_mat` VARCHAR(50) NOT NULL,
   `num_calle` VARCHAR(8) NULL,
   `num_casa` VARCHAR(8) NULL,
   `calle_superior` VARCHAR(8) NULL,
   `calle_inferior` VARCHAR(8) NULL,
   `genero` VARCHAR(10) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
   `fk_id_colonia` INT NOT NULL,
   `fk_id_estado` INT NOT NULL,
   `fk_id_localidad` INT NOT NULL,
@@ -420,6 +419,16 @@ CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`turno_Bibliotecario` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
+CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`email` (
+  `idemail` VARCHAR(100) NOT NULL,
+  `fk_id_usuario_email` INT NOT NULL,
+  PRIMARY KEY (`idemail`),
+  CONSTRAINT `fk_id_usuario_email`
+    FOREIGN KEY (`fk_id_usuario_email`)
+    REFERENCES `BibliotecaBD`.`Usuario` (`id_usuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
