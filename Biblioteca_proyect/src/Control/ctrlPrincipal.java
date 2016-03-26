@@ -14,6 +14,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.JFrame;
 import javax.swing.Timer;
 
 /**
@@ -36,6 +37,8 @@ public class ctrlPrincipal {
     public void inciar(){
         
         vistafr.setLocationRelativeTo(null);
+        vistafr.setTitle("Biblioteca");
+        vistafr.setResizable(false);
         vistafr.setVisible(true);
     
     }

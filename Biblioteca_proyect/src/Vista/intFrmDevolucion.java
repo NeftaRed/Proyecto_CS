@@ -183,18 +183,18 @@ public class intFrmDevolucion extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        btnNuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca_proyect\\iconos\\Nuevo.png")); // NOI18N
+        btnNuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca\\iconos\\Nuevo.png")); // NOI18N
         btnNuevo.setText("Nuevo");
 
-        btnCancelar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca_proyect\\iconos\\Cancelar.png")); // NOI18N
+        btnCancelar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca\\iconos\\Cancelar.png")); // NOI18N
         btnCancelar.setText("Cancelar");
 
         jLabel6.setText("Buscar por Nombre:");
 
-        btnCapturar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca_proyect\\iconos\\Guardar.png")); // NOI18N
+        btnCapturar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca\\iconos\\Guardar.png")); // NOI18N
         btnCapturar.setText("Capturar");
 
-        txtRefrescar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca_proyect\\iconos\\Refrescar.png")); // NOI18N
+        txtRefrescar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca\\iconos\\Refrescar.png")); // NOI18N
         txtRefrescar.setText("Refrescar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

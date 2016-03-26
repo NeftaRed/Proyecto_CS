@@ -5,9 +5,12 @@
  */
 package main;
 
+import Control.ctrlPrincipal;
+import Vista.frmPrincipal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -23,29 +26,20 @@ public class Biblioteca_proyect {
     
     
     public static void main(String[] args) {
+        
         try {
-            // TODO code application logic here
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Biblioteca_proyect.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(Biblioteca_proyect.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(Biblioteca_proyect.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedLookAndFeelException ex) {
-            Logger.getLogger(Biblioteca_proyect.class.getName()).log(Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(   UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            JOptionPane.showInternalConfirmDialog(null, e);
         }
         
-            frmPrincipal ventana= new frmPrincipal();
+            Vista.frmPrincipal vista= new Vista.frmPrincipal();
             
-            ventana.setTitle("Biblioteca");
+            ctrlPrincipal Control = new ctrlPrincipal(vista);
             
-            ventana.setResizable(false);
+            Control.inciar();
             
-            ventana.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            
-            ventana.setVisible(true);
+            vista.setExtendedState(JFrame.MAXIMIZED_BOTH);
         
     }
     

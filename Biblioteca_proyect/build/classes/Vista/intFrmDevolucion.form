@@ -356,7 +356,7 @@
     <Component class="javax.swing.JButton" name="btnNuevo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca_proyect\iconos\Nuevo.png"/>
+          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca\iconos\Nuevo.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Nuevo"/>
       </Properties>
@@ -367,7 +367,7 @@
     <Component class="javax.swing.JButton" name="btnCancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca_proyect\iconos\Cancelar.png"/>
+          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca\iconos\Cancelar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
@@ -388,7 +388,7 @@
     <Component class="javax.swing.JButton" name="btnCapturar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca_proyect\iconos\Guardar.png"/>
+          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca\iconos\Guardar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Capturar"/>
       </Properties>
@@ -399,7 +399,7 @@
     <Component class="javax.swing.JButton" name="txtRefrescar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca_proyect\iconos\Refrescar.png"/>
+          <Image iconType="2" name="C:\Users\Anthony Can\Documents\NetBeansProjects\Biblioteca\iconos\Refrescar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Refrescar"/>
       </Properties>

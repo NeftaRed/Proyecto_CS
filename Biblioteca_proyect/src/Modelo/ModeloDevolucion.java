@@ -53,14 +53,6 @@ public class ModeloDevolucion {
                 JOptionPane.showMessageDialog(null,"La Captura No Fue Exitosa ");
             }
     }
-    public void porcesDeuda(){
-        String sqlComparare="SELECT * FROM devolucion WHERE fecha";
-        if (true) {
-            
-        } else {
-        }
-        
-    }
     public void mostrarDevolucion(String datoSearch){
         DefaultTableModel tableModel = new DefaultTableModel(); 
         

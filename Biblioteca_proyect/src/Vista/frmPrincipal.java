@@ -36,7 +36,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca_proyect\\iconos\\fondoPrincipal.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anthony Can\\Documents\\NetBeansProjects\\Biblioteca\\iconos\\fondoPrincipal.jpg")); // NOI18N
 
         dskEscritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
