@@ -203,6 +203,7 @@ CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Prestamos` (
   `fecha_entrega` DATETIME NOT NULL,
   `hora_actual` TIME NULL,
   `fecha_actual` DATE NOT NULL,
+  `notificacion` BOOLEAN NOT NULL,
   `fk_rfc_bibliotecario_prestamo` INT NOT NULL,
   `fk_id_usuario_prestamo` INT NOT NULL,
   PRIMARY KEY (`id_prestamos`),
