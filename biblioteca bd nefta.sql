@@ -238,6 +238,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Devolucion` (
   `id_devolucion` INT NOT NULL,
+  `Matricula` BIGINT(12) NOT NULL,
   `fecha` DATE NOT NULL,
   `hora` TIME NOT NULL,
   `fk_rfc_bibliotecario_devolucion` INT NOT NULL,
