@@ -88,7 +88,7 @@ DEFAULT CHARACTER SET = ujis;
 -- Table `BibliotecaBD`.`telefono_casa`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`telefono_casa` (
-  `telefono_casa` INT NOT NULL,
+  `telefono_casa` BIGINT NOT NULL,
   `fk_id_usuario_casa` INT NOT NULL,
   PRIMARY KEY (`telefono_casa`),
   CONSTRAINT `fk_id_usuario_casa`
@@ -103,7 +103,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`telefono_celular`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`telefono_celular` (
-  `telefono_celular` INT NOT NULL,
+  `telefono_celular` BIGINT NOT NULL,
   `fk_id_usuario_cel` INT NOT NULL,
   PRIMARY KEY (`telefono_celular`),
   CONSTRAINT `fk_id_usuario_cel`
@@ -118,7 +118,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Bibliotecario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Bibliotecario` (
-  `rfc_bibliotecario` INT NOT NULL,
+  `rfc_bibliotecario` VARCHAR(45) NOT NULL,
   `contrasenia` VARCHAR(45) NOT NULL,
   `id_login` VARCHAR(45) NOT NULL,
   `fk_id_usuario_bibliotecario` INT NOT NULL,
@@ -199,12 +199,12 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Prestamos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Prestamos` (
-  `id_prestamos` INT NOT NULL,
+  `id_prestamos` INT NOT NULL AUTO_INCREMENT,
   `fecha_entrega` DATETIME NOT NULL,
   `hora_actual` TIME NULL,
   `fecha_actual` DATE NOT NULL,
   `notificacion` BOOLEAN NOT NULL,
-  `fk_rfc_bibliotecario_prestamo` INT NOT NULL,
+  `fk_rfc_bibliotecario_prestamo` VARCHAR(45) NOT NULL,
   `fk_id_usuario_prestamo` INT NOT NULL,
   PRIMARY KEY (`id_prestamos`),
   CONSTRAINT `fk_rfc_bibliotecario_prestamo`
@@ -238,10 +238,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Devolucion` (
   `id_devolucion` INT NOT NULL,
-  `Matricula` BIGINT(12) NOT NULL,
   `fecha` DATE NOT NULL,
   `hora` TIME NOT NULL,
-  `fk_rfc_bibliotecario_devolucion` INT NOT NULL,
+  `fk_rfc_bibliotecario_devolucion` VARCHAR(45) NOT NULL,
   `fk_id_prestamos` INT NOT NULL,
   `fk_id_deuda` INT NOT NULL,
   PRIMARY KEY (`id_devolucion`),
@@ -404,7 +403,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`turno_Bibliotecario` (
   `id_turno_bibliotecario` INT NOT NULL AUTO_INCREMENT,
   `fk_id_turno` INT NOT NULL,
-  `fk_rfc_bibliotecario_turno` INT NOT NULL,
+  `fk_rfc_bibliotecario_turno` VARCHAR(45) NOT NULL,
   `fecha` DATE NOT NULL,
   `hora` TIME NOT NULL,
   PRIMARY KEY (`id_turno_bibliotecario`),
