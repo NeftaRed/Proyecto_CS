@@ -1,0 +1,54 @@
+
+INSERT INTO colonia (nombrecolonia) VALUES ('Fernando Novelo');
+INSERT INTO estado (nombreestado) VALUES ('Yucatan');
+INSERT INTO localidad (nombrelocalidad) VALUES ('Valladolid');
+
+INSERT INTO Usuario (huella,imagen_perfil,Prim_nombre,url_direccion,Seg_nombre,apellido_pat,apellido_mat,num_calle,num_casa,calle_superior,calle_inferior,genero,fk_id_colonia,fk_id_estado,fk_id_localidad)
+VALUES ('kjdfhskjdf','ksldjflkdsjflk','Neftali','c:/localhost','','Hau','Uribe','17','111','18','16','Masculino',1,1,1);
+
+INSERT INTO Usuario (huella,imagen_perfil,Prim_nombre,url_direccion,Seg_nombre,apellido_pat,apellido_mat,num_calle,num_casa,calle_superior,calle_inferior,genero,fk_id_colonia,fk_id_estado,fk_id_localidad)
+VALUES ('kjdfhskjdf','ksldjflkdsjflk','Nyaruko','c:/localhost','','Panch','Ero','20a','111p','18r','16z','Masculino',1,1,1);
+
+INSERT INTO telefono_casa VALUES (9851081250,1);
+
+INSERT INTO telefono_celular VALUES (9851081250,1);
+
+INSERT INTO email VALUES ('neftali185@hotmail.com',1);
+
+INSERT INTO telefono_casa VALUES (9851181250,2);
+
+INSERT INTO telefono_celular VALUES (9851181250,2);
+
+INSERT INTO email VALUES ('Nyarukochan@hotmail.com',2);
+
+INSERT INTO carrera (nombrecarrera) VALUES ('Sistemas Computacionales');
+
+INSERT INTO alumno VALUES (13070019,'6°',1,1);
+
+INSERT INTO bibliotecario VALUES ('RFCRFCRFC','holamundo','mundo',2);
+
+INSERT INTO Prestamos (fecha_entrega,hora_actual,fecha_actual,notificacion,fk_rfc_bibliotecario_prestamo,fk_id_usuario_prestamo)
+VALUES ('2016-03-27 06:22:00','05:22:00','2016-03-27',true,'RFCRFCRFC',1);
+
+INSERT INTO clasificacion_dewey VALUES (000,'Información y Obras Generales');
+INSERT INTO clasificacion_dewey VALUES (100,'Filosofía y Psicología');
+INSERT INTO clasificacion_dewey VALUES (200,'Religión, Teología');
+INSERT INTO clasificacion_dewey VALUES (300,'Ciencias Sociales');
+
+INSERT INTO Material_bibliografico VALUES (378098,6,'Pepe',120,'2015-01-01',5,2,0);
+INSERT INTO Material_bibliografico VALUES (378099,6,'Pedro',130,'2015-02-03',5,2,0);
+INSERT INTO Material_bibliografico VALUES (378100,6,'Pancho',140,'2015-03-02',5,2,0);
+
+INSERT INTO Tesis VALUES (1,'Sistemas',378098);
+INSERT INTO Tesis VALUES (2,'Sistemas',378099);
+INSERT INTO Tesis VALUES (3,'Sistemas',378100);
+
+
+INSERT INTO Detalle_prestamo VALUES (1,1,378098);
+
+UPDATE Material_bibliografico SET cantidad=5 WHERE codigo_de_barra=378098;
+
+
+
+
+
