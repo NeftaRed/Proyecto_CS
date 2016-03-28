@@ -44,7 +44,7 @@ INSERT INTO Tesis VALUES (2,'Sistemas',378099);
 INSERT INTO Tesis VALUES (3,'Sistemas',378100);
 
 
-INSERT INTO Detalle_prestamo VALUES (1,1,378098);
+INSERT INTO Detalle_prestamo (fk_id_prestamos_detalle,fk_codigo_de_barra_prestamo) VALUES (1,378098);
 
 UPDATE Material_bibliografico SET cantidad=5 WHERE codigo_de_barra=378098;
 
