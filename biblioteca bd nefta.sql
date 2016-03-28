@@ -224,7 +224,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Deuda`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Deuda` (
-  `id_deuda` INT NOT NULL,
+  `id_deuda` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATETIME NOT NULL,
   `Dias_transcurrido` VARCHAR(45) NOT NULL,
   `total` VARCHAR(45) NULL,
@@ -237,7 +237,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Devolucion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Devolucion` (
-  `id_devolucion` INT NOT NULL,
+  `id_devolucion` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NOT NULL,
   `hora` TIME NOT NULL,
   `fk_rfc_bibliotecario_devolucion` VARCHAR(45) NOT NULL,
@@ -370,7 +370,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Detalle_prestamo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Detalle_prestamo` (
-  `id_detalle_prestamo` INT NOT NULL,
+  `id_detalle_prestamo` INT NOT NULL AUTO_INCREMENT,
   `fk_id_prestamos_detalle` INT NOT NULL,
   `fk_codigo_de_barra_prestamo` INT NOT NULL,
   PRIMARY KEY (`id_detalle_prestamo`),
