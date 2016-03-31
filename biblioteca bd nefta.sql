@@ -277,6 +277,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Material_bibliografico` (
   `codigo_de_barra` INT NOT NULL,
+  `nombre_material` VARCHAR(200) NOT NULL,
   `cantidad` INT NOT NULL,
   `autor` VARCHAR(45) NOT NULL,
   `num_paginas` INT NOT NULL,
@@ -297,7 +298,7 @@ ENGINE = InnoDB;
 -- Table `BibliotecaBD`.`Detalle_devolucion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BibliotecaBD`.`Detalle_devolucion` (
-  `id_detalle_devolucion` INT NOT NULL,
+  `id_detalle_devolucion` INT NOT NULL AUTO_INCREMENT,
   `fk_id_devolucion` INT NOT NULL,
   `fk_codigo_de_barra_devolucion` INT NOT NULL,
   PRIMARY KEY (`id_detalle_devolucion`),
